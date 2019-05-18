@@ -25,7 +25,7 @@ SECRET_KEY = 'u10jz#zgau-==edbzn0+9fi!^jetxuwbta27siw@m)0f@2#_)w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ewijohnson.com', '159.203.88.188']
+ALLOWED_HOSTS = ['ewijohnson.com', '159.203.88.188', '127.0.0.1:8000']
 
 
 # Application definition
@@ -78,8 +78,8 @@ WSGI_APPLICATION = 'game_closet.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'game_list',
-        'USER': 'admin',
+        'NAME': 'game_list_database',
+        'USER': 'sysadmin',
         'PASSWORD': 'games4Life',
         'HOST': 'localhost',
         'PORT': '',
