@@ -1,0 +1,86 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            title is provided by inheriting templates
+        {% endblock %}
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><script
+      src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script><![endif]-->
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+
+<div class="container">
+    <header class="row">
+        <div class="offset-by-one ten columns">
+            <h1 class="logo">GameList</h1>
+            <h2>Game Information Catalog</h2>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="{% url 'gamelist_game_list_urlpattern' %}">
+                    Games</a></li>
+
+            <li>
+                <a href="{% url 'gamelist_person_list_urlpattern' %}">
+                    People</a></li>
+
+        </ul>
+    </nav>
+    <main>
+    {% block content %}
+      <div class="row">
+        <section class="desktop four columns">
+          {% block create_button %}{% endblock %}
+        </section>
+        <section class="eight columns">
+          {% block org_content %}
+            This is default content!
+          {% endblock %}
+        </section>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          {% block content_footer %}{% endblock %}
+        </div>
+      </div>
+    {% endblock %}
+    </main>
+
+</div><!-- container -->
+
+<footer>
+    <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            <img alt="Creative Commons License" style="border-width:0"
+                 src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/>
+        </a><br/><span property="dct:title">GameList Code</span>
+        by Eric Johnson are licensed under a
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike
+            4.0 International License</a>.
+    </p>
+    <p>Portions of the GameList code are based upon code from
+        <a href="https://django-unleashed.com">Django Unleashed</a>,
+        <a href="http://getskeleton.com/">Skeleton</a>,
+        <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>, and
+        the EZ University Tutorial by
+        <a href="https://www.ligent.net" property="cc:attributionName"
+           rel="cc:attributionURL">Ligent, LLC</a>, and
+        are subject to the intellectual property rights restrictions of those works.
+    </p>
+</footer>
+
+</body>
+
+</html>

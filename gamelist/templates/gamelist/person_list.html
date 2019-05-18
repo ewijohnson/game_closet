@@ -1,0 +1,25 @@
+{% extends 'gamelist/base.html' %}
+
+{% block title %}
+    Person List
+{% endblock %}
+
+{% block create_button %}
+    <a href="{% url 'gamelist_person_create_urlpattern' %}"
+       class="button button-primary">
+        Add New Person
+    </a>
+{% endblock %}
+
+{% block org_content %}
+    <h2>Person List</h2>
+    <ul>
+        {% for person in person_list %}
+            <li>
+                <a href="{{ person.get_absolute_url }}">{{ person }}</a>
+            </li>
+        {% empty %}
+            <li><em>There are currently no people available.</em></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

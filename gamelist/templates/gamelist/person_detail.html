@@ -1,0 +1,42 @@
+{% extends 'gamelist/base.html' %}
+
+{% block title %}
+    {{ person }}
+{% endblock %}
+
+{% block content %}
+    <article>
+        <div class="row">
+            <div class="offset-by-two eight columns">
+                <h2>{{ person }}</h2>
+                <ul class="inline"></ul>
+                    <li>
+                        <a href="{{ person.get_update_url }}" class="button">
+                            Edit Person
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ person.get_delete_url }}" class="button">
+                            Delete Person
+                        </a>
+                    </li>
+
+                </ul>
+
+                <section>
+                    <h3>Games This Person Wants to Keep</h3>
+                    <ul>
+                        {% for game in game_list %}
+                            <li>
+                                <a href="{{ game.get_absolute_url }}">{{ game }}</a>
+                            </li>
+                        {% empty %}
+                            <li><em>There are currently no games this person wants to keep.</em></li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+{% endblock %}

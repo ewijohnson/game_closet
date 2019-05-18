@@ -1,0 +1,25 @@
+{% extends 'gamelist/base.html' %}
+
+{% block title %}
+    Error Deleting Person
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h2>Error Deleting Person</h2>
+        <p>
+            You may not delete person: {{ person }}.
+            This person currently wants to keep the following games:
+        </p>
+
+        <ul>
+            {% for game in games %}
+            <li><a href="{{ game.get_absolute_url }}">{{ game }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <p>
+            Return to <a href="{% url 'gamelist_person_list_urlpattern' %}">Person List</a>.
+        </p>
+    </div>
+{% endblock %}

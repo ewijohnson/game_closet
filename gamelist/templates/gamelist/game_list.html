@@ -1,0 +1,25 @@
+{% extends 'gamelist/base.html' %}
+
+{% block title %}
+    Game List
+{% endblock %}
+
+{% block create_button %}
+    <a href="{% url 'gamelist_game_create_urlpattern' %}"
+       class="button button-primary">
+        Add New Game
+    </a>
+{% endblock %}
+
+{% block org_content %}
+    <h2>Game List</h2>
+    <ul>
+        {% for game in game_list %}
+            <li>
+                <a href="{{ game.get_absolute_url }}">{{ game }}</a>
+            </li>
+        {% empty %}
+            <li><em>There are currently no games available.</em></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

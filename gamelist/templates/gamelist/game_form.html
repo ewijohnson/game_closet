@@ -1,0 +1,15 @@
+{% extends 'gamelist/base.html' %}
+
+{% block title %}
+    Add Game
+{% endblock %}
+
+{% block content %}
+    <form
+        action="{% url 'gamelist_game_create_urlpattern' %}"
+        method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Game</button>
+    </form>
+{% endblock %}

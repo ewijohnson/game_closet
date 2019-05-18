@@ -1,0 +1,15 @@
+{% extends 'gamelist/base.html' %}
+
+{% block title %}
+    Update Game
+{% endblock %}
+
+{% block content %}
+    <form
+        action="{{ game.get_update_url }}"
+        method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update Game</button>
+    </form>
+{% endblock %}

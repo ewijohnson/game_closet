@@ -1,0 +1,84 @@
+"""game_closet URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/2.1/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path
+from django.views.generic import RedirectView
+
+from gamelist.views import (
+    GameList,
+    GameDetail,
+    GameCreate,
+    GameUpdate,
+    GameDelete,
+    PersonList,
+    PersonDetail,
+    PersonCreate,
+    PersonUpdate,
+    PersonDelete,
+)
+
+
+urlpatterns = [
+
+    path('',
+         RedirectView.as_view(
+             pattern_name='gamelist_game_list_urlpattern',
+             permanent=False
+         )),
+
+    path('admin/', admin.site.urls),
+
+    path('game/',
+         GameList.as_view(),
+         name='gamelist_game_list_urlpattern'),
+
+    path('game/<int:pk>/',
+         GameDetail.as_view(),
+         name='gamelist_game_detail_urlpattern'),
+
+    path('game/create/',
+         GameCreate.as_view(),
+         name='gamelist_game_create_urlpattern'),
+
+    path('game/<int:pk>/update/',
+         GameUpdate.as_view(),
+         name='gamelist_game_update_urlpattern'),
+
+    path('game/<int:pk>/delete/',
+         GameDelete.as_view(),
+         name='gamelist_game_delete_urlpattern'),
+
+    path('person/',
+         PersonList.as_view(),
+         name='gamelist_person_list_urlpattern'),
+
+    path('person/<int:pk>/',
+         PersonDetail.as_view(),
+         name='gamelist_person_detail_urlpattern'),
+
+    path('person/create/',
+         PersonCreate.as_view(),
+         name='gamelist_person_create_urlpattern'),
+
+    path('person/<int:pk>/update/',
+         PersonUpdate.as_view(),
+         name='gamelist_person_update_urlpattern'),
+
+    path('person/<int:pk>/delete/',
+         PersonDelete.as_view(),
+         name='gamelist_person_delete_urlpattern'),
+
+]
