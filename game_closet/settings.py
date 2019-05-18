@@ -25,7 +25,7 @@ SECRET_KEY = 'u10jz#zgau-==edbzn0+9fi!^jetxuwbta27siw@m)0f@2#_)w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ewijohnson.com', '159.203.88.188']
 
 
 # Application definition
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'game_closet.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'game_list',
+        'USER': 'admin',
+        'PASSWORD': 'games4Life',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -120,3 +124,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71b4c456-c7e1-48ba-a40b-397a9f485285" name="Default Changelist" comment="" />
+    <list default="true" id="71b4c456-c7e1-48ba-a40b-397a9f485285" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_closet/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_closet/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gamelist/templates/gamelist/game_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="68">
               <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game_closet/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="115" column="15" lean-forward="true" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -56,7 +68,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/gamelist/apps.py" />
-        <option value="$PROJECT_DIR$/game_closet/settings.py" />
         <option value="$PROJECT_DIR$/gamelist/forms.py" />
         <option value="$PROJECT_DIR$/gamelist/admin.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
@@ -77,12 +88,13 @@
         <option value="$PROJECT_DIR$/gamelist/templates/gamelist/base.html" />
         <option value="$PROJECT_DIR$/game_closet/urls.py" />
         <option value="$PROJECT_DIR$/gamelist/templates/gamelist/game_detail.html" />
+        <option value="$PROJECT_DIR$/game_closet/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="width" value="2250" />
+    <option name="x" value="1800" />
+    <option name="width" value="2052" />
     <option name="height" value="2079" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -102,24 +114,6 @@
               <item name="game_closet" type="b2602c69:ProjectViewProjectNode" />
               <item name="game_closet" type="462c0819:PsiDirectoryNode" />
               <item name="game_closet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game_closet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game_closet" type="462c0819:PsiDirectoryNode" />
-              <item name="gamelist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game_closet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game_closet" type="462c0819:PsiDirectoryNode" />
-              <item name="gamelist" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game_closet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game_closet" type="462c0819:PsiDirectoryNode" />
-              <item name="gamelist" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="gamelist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -196,16 +190,19 @@
       <workItem from="1557684263491" duration="8364000" />
       <workItem from="1557756557231" duration="1150000" />
       <workItem from="1558147067005" duration="598000" />
+      <workItem from="1558152333201" duration="1154000" />
+      <workItem from="1558209202700" duration="728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10112000" />
+    <option name="totallyTimeSpent" value="11994000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1000" height="923" extended-state="0" />
+    <frame x="800" y="0" width="912" height="924" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2595339" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2978972" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -268,13 +265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game_closet/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -393,7 +383,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gamelist/templates/gamelist/game_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="68">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
@@ -409,6 +399,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_closet/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="115" column="15" lean-forward="true" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
         </state>
       </provider>
     </entry>
