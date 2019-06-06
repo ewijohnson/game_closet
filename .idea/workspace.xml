@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71b4c456-c7e1-48ba-a40b-397a9f485285" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_closet/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_closet/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="71b4c456-c7e1-48ba-a40b-397a9f485285" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -74,6 +78,7 @@
         <option value="$PROJECT_DIR$/gamelist/templates/gamelist/game_detail.html" />
         <option value="$PROJECT_DIR$/game_closet/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -95,6 +100,17 @@
             <path>
               <item name="game_closet" type="b2602c69:ProjectViewProjectNode" />
               <item name="game_closet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game_closet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game_closet" type="462c0819:PsiDirectoryNode" />
+              <item name="gamelist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game_closet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game_closet" type="462c0819:PsiDirectoryNode" />
+              <item name="gamelist" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -174,16 +190,15 @@
       <workItem from="1558209202700" duration="2548000" />
       <workItem from="1558906508529" duration="1329000" />
       <workItem from="1559712158962" duration="76000" />
-      <workItem from="1559789360075" duration="1312000" />
+      <workItem from="1559789360075" duration="2237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16531000" />
+    <option name="totallyTimeSpent" value="17456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="740" y="0" width="912" height="924" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31892523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -396,6 +411,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
